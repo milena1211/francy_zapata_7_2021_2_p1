@@ -9,18 +9,17 @@ class LoaderComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        width: 300,
+        width: 200,
         height: 300,
         decoration: BoxDecoration(
-            color: Colors.deepPurple[200],
-            borderRadius: BorderRadius.circular(30)),
+            color: Colors.purpleAccent[200],
+            borderRadius: BorderRadius.circular(50)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircularProgressIndicator(),
             SizedBox(
-              width: 50,
-              height: 50,
+              height: 20,
             ),
             Text(
               text,

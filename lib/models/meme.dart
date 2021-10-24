@@ -27,14 +27,14 @@ class Meme {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> meme = new Map<String, dynamic>();
-    meme['submission_id'] = this.submissionId;
-    meme['submission_url'] = this.submissionUrl;
-    meme['submission_title'] = this.submissionTitle;
-    meme['permalink'] = this.permalink;
-    meme['author'] = this.author;
-    meme['created'] = this.created;
-    meme['timestamp'] = this.timestamp;
-    return meme;
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['submission_id'] = this.submissionId;
+    data['submission_url'] = this.submissionUrl;
+    data['submission_title'] = this.submissionTitle;
+    data['permalink'] = this.permalink;
+    data['author'] = this.author;
+    data['created'] = this.created;
+    data['timestamp'] = this.timestamp;
+    return data;
   }
 }
