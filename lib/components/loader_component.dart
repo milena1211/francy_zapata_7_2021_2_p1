@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class LoaderComponent extends StatelessWidget {
+class loaderComponent extends StatelessWidget {
   final String text;
 
-  LoaderComponent({this.text = ''});
+  loaderComponent({this.text = ''});
 
   @override
   Widget build(BuildContext context) {
