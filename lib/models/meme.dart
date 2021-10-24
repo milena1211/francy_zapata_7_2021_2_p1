@@ -1,4 +1,4 @@
-class Data {
+class Meme {
   String submissionId = '';
   String submissionUrl = '';
   String submissionTitle = '';
@@ -7,7 +7,7 @@ class Data {
   String created = '';
   String timestamp = '';
 
-  Data(
+  Meme(
       {required this.submissionId,
       required this.submissionUrl,
       required this.submissionTitle,
@@ -16,7 +16,7 @@ class Data {
       required this.created,
       required this.timestamp});
 
-  Data.fromJson(Map<String, dynamic> json) {
+  Meme.fromJson(Map<String, dynamic> json) {
     submissionId = json['submission_id'];
     submissionUrl = json['submission_url'];
     submissionTitle = json['submission_title'];
@@ -27,14 +27,14 @@ class Data {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['submission_id'] = submissionId;
-    data['submission_url'] = submissionUrl;
-    data['submission_title'] = submissionTitle;
-    data['permalink'] = permalink;
-    data['author'] = author;
-    data['created'] = created;
-    data['timestamp'] = timestamp;
-    return data;
+    final Map<String, dynamic> meme = new Map<String, dynamic>();
+    meme['submission_id'] = this.submissionId;
+    meme['submission_url'] = this.submissionUrl;
+    meme['submission_title'] = this.submissionTitle;
+    meme['permalink'] = this.permalink;
+    meme['author'] = this.author;
+    meme['created'] = this.created;
+    meme['timestamp'] = this.timestamp;
+    return meme;
   }
 }
